@@ -1,0 +1,157 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    width: 100%;
+    height: auto;
+}
+
+.hederContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;;
+    align-items: flex-end;;
+    padding: 25px 200px;
+    gap: 10px;
+
+    width: 100%;
+    height: auto;
+}
+
+.hederContentText{
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+    letter-spacing: 0.1em;
+
+    color: #000000;
+
+}
+
+.headerMainInfo{
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 100px;
+
+    width: 100%;
+    height: 140px
+}
+
+.logoHeder{
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 0px 0px;
+
+    height: 100%;
+}
+
+.logoHederText{ 
+
+    font-family: 'Microsoft Yi Baiti';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 45px;
+    /* identical to box height, or 50% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+
+    color: #000000;
+}
+
+.navigation{
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 30px 0px 0px;
+    gap: 125px;
+
+    width: 100%;
+}
+
+.navOptions{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+}
+
+.navTextItem{
+    list-style-type: none;
+}
+
+.navTextItem a{
+    display: block;
+
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+}
+
+.navTextItem a:hover{
+    opacity: 0.7; /* Устанавливаем прозрачность при наведении */
+    transition: opacity 0.3s ease; /* Добавляем плавный переход */
+}
+
+.busket {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+
+}
+
+.busketButton {
+
+    background: none;
+    border: none;
+    outline: none; 
+    cursor: pointer; 
+
+    width: 89px;
+    height: 18px;
+
+    font-family: 'Montserrat';
+    font-style: bold;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #000000;
+}

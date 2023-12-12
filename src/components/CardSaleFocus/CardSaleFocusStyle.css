@@ -1,0 +1,62 @@
+.cardFocusContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #ECECEC;
+    padding: 0px 30px;
+
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+
+}
+
+.descriptionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    text-transform: lowercase;
+    text-align: center;
+}
+
+.priceContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+
+    border-top: 1px solid #000000;
+}
+
+.buyButton{
+    width: 35px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    border: none;
+    background: none;
+}
+
+.buyButton img {
+    width: 100%;
+    height: 100%;
+}
