@@ -1,12 +1,12 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
+import './CardContainerStyle.css';
 import Card from "../Card/Card";
 
- 
 
-import csImg1 from "./../../img/for card 1.jpg";
-import csImg2 from "./../../img/for card 2.jpg";
-import csImg3 from "./../../img/for card 3.jpg";
-import csImg4 from "./../../img/for card 4.jpg";
+const csImg1 = "/img/for card 1.jpg"; 
+const csImg2 = "/img/for card 2.jpg";
+const csImg3 = "/img/for card 3.jpg";
+const csImg4 = "/img/for card 4.jpg";
 
 const cardsExtendal = [
   {
@@ -40,24 +40,19 @@ const cardsExtendal = [
 ];
 
 const CardContainer = () => {
-    const [cards, setCards] = useState([]);
-    useEffect(() => {
-        const timer = setTimeout(() => setCards(cardsExtendal), 3000);
-        return () => clearTimeout(timer);
-    }, [])
-    return (
-        <div className="СatalogPageContent">
-        <div className="CardContainer">
-            
-            {
-                cards.map(card =>(<Card
-                    {...card}
-                    key={card.id}
-                />))
-            }
-            
-        </div>
-        </div>
-    );
+  const [cards, setCards] = useState([]);
+  useEffect(() => {
+    const timer = setTimeout(() => setCards(cardsExtendal), 3000);
+    return () => clearTimeout(timer);
+  }, []);
+  return (
+    <div className="СatalogPageContent">
+      <div className="CardContainer">
+        {cards.map((card) => (
+          <Card {...card} key={card.cardId} />
+        ))}
+      </div>
+    </div>
+  );
 };
 export default CardContainer;

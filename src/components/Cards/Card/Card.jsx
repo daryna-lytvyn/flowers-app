@@ -1,8 +1,9 @@
 import React, { useCallback, useState } from "react";
-import CardSale from "../CardSale/CardSale";
+import "./CardStyle.css";
 import CardSaleFocus from "../CardSaleFocus/CardSaleFocus";
+import CardSale from "../CardSale/CardSale";
 
-const Card = ({ id,cardTitle, cardPrice, cardImg, cardDescription }) => {
+const Card = ({ cardId, cardTitle, cardPrice, cardImg, cardDescription }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = useCallback(() => {
@@ -22,16 +23,13 @@ const Card = ({ id,cardTitle, cardPrice, cardImg, cardDescription }) => {
       {/* Отображение компонентов в зависимости от состояния isHovered */}
       {isHovered ? (
         <CardSaleFocus
-          cardSaleFocus={{
-            title: cardTitle,
-            price: cardPrice,
-            description: cardDescription,
-          }}
+          id={cardId}
+          title={cardTitle}
+          price={cardPrice}
+          description={cardDescription}
         />
       ) : (
-        <CardSale
-          cardSale={{ title: cardTitle, price: cardPrice, img: cardImg }}
-        />
+        <CardSale id={cardId} title={cardTitle} price={cardPrice} img={cardImg} />
       )}
     </div>
   );
