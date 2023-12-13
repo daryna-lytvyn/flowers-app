@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Heder/Heder';
 import Footer from './components/Footer/Footer';
 
-import CardContainer from './components/CardContainer/CardContainer';
+import CardContainer from './components/Cards/CardContainer/CardContainer';
 
 import BusketPage from './components/BusketPage/BusketPage';
 
@@ -17,13 +17,7 @@ function App() {
         <Header />
         <CardContainer/>
         <Footer />
-        {/* import Flower from './components/Flower'; <Flower flow={{flowerType: 'Rose', variety: 'Avelanch'}}/>
-              <Flower flow={{flowerType: 'Tulip', variety: 'NorthPink'}}/>
-              <Flower flow={{flowerType: 'Rose', variety: 'BlackMagic'}}/>
-              <Flower flow={{flowerType: 'Rose', variety: 'Djumilia'}}/>
-          */}
-      </div>
-      
+      </div>   
     </div>
     
   );
