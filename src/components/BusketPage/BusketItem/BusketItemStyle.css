@@ -1,0 +1,78 @@
+.busketItem {
+  width: 800px;
+  height: 220px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.busketTextSpase {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 25px;
+  gap: 10px;
+
+  font-family: "Anek Gurmukhi";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.busketInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 100%;
+  height: 100%;
+}
+
+.deleteBusketItemButton {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+
+  width: 100%;
+  height: auto;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.deleteBusketItemButton:hover {
+  color: #bc0000;
+  transition: opacity 0.3s ease;
+}
+
+.busketImgSpase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 25px;
+
+  width: auto;
+  width: auto;
+}
+
+.busketImg {
+  width: 133px;
+  height: 180px;
+  object-fit: cover;
+}

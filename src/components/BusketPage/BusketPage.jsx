@@ -1,28 +1,20 @@
-import React from 'react';
-import  './BusketPageStyle.css'
+import React from "react";
+import "./BusketPageStyle.css";
 
-const BusketPage = () =>{
-    return(
-        <div className ='BusketPage'> 
-            <div className ='busketContent'> 
-                <div className ='busketExit'> 
-                
-                </div>
-                <div className ='busketTitle'> 
-                
-                </div>
-                <div className ='selectedItems'> 
-                
-                </div>
-                <div className ='totalPrise'> 
-                
-                </div>
-                <div className ='buttonOrderContainer'> 
-                
-                </div>
-            </div>
+import BusketItemsСontainer from "./BusketItemsСontainer/BusketItemsСontainer";
+
+const BusketPage = ({offBusketClick}) => {
+  return (
+    <div className="BusketPage">
+      <div className="busketContent">
+          <button className="busketExitButton" onClick={offBusketClick}>Вийти</button>
+        <div className="busketTitle">
+          <p>Кошик</p>
+        </div>
+        <BusketItemsСontainer/>
       </div>
-    )
+    </div>
+  );
 };
 
 export default BusketPage;
