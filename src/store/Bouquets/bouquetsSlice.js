@@ -6,8 +6,8 @@ export const fetchBouquets = createAsyncThunk('bouquets/fetchAll', async (_, thu
 });
 
 const initialState = {
-  entities: [],
-  loading: 'idle',
+  items: [],
+  loading: 'idle'
 };
 
 const bouquetsSlice = createSlice({
@@ -20,7 +20,7 @@ const bouquetsSlice = createSlice({
     });
     builder.addCase(fetchBouquets.fulfilled, (state, action) => {
       state.loading = 'succeeded';
-      state.entities = action.payload;
+      state.items = action.payload;
     });
     builder.addCase(fetchBouquets.rejected, (state) => {
       state.loading = 'failed';
@@ -28,7 +28,7 @@ const bouquetsSlice = createSlice({
   },
 });
 
-export const selectBouquets = (state) => state.bouquets.entities;
+export const selectBouquets = (state) => state.bouquets.items;
 export const statusBouquetsLoading = (state) => state.bouquets.loading;
 
 export default bouquetsSlice.reducer;

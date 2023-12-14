@@ -21,17 +21,23 @@ const Card = ({ cardId, cardTitle, cardPrice, cardImg, cardDescription }) => {
       onMouseLeave={handleMouseLeave}
       className="Card"
     >
-      
       {/* Отображение компонентов в зависимости от состояния isHovered */}
       {isHovered ? (
         <CardSaleFocus
           id={cardId}
           title={cardTitle}
           price={cardPrice}
+          img={cardImg}
           description={cardDescription}
         />
       ) : (
-        <CardSale id={cardId} title={cardTitle} price={cardPrice} img={cardImg} />
+        <CardSale
+          id={cardId}
+          title={cardTitle}
+          price={cardPrice}
+          img={cardImg}
+          description={cardDescription}
+        />
       )}
     </div>
   );

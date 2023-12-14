@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from "react";
+import React, {useEffect} from "react";
 import "./CardContainerStyle.css";
 import Card from "../Card/Card";
 
