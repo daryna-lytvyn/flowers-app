@@ -1,14 +1,17 @@
 import { createSlice } from '@reduxjs/toolkit';
-import jsonData from './bouquets.json'; 
+import jsonDatas from './bouquets.json'; 
+
+const initialState = {
+    jsonData: jsonDatas,
+};
 
 const bouquetsSlice = createSlice({
   name: 'bouquets',
-  initialState: {
-    jsonData: jsonData,
-  },
+  initialState: initialState,
   reducers: {
     updateBouquets(state, action) {
-      state.jsonData = action.payload;
+        console.log(action.payload);
+       state.jsonData = action.payload;
     },
   },
 });

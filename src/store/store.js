@@ -2,12 +2,9 @@ import { configureStore } from '@reduxjs/toolkit'
 import basketSlice from './Basket/basketSlice';
 import bouquetsSlice from './Bouquets/bouquetsSlice';
 
-const basketReducer = basketSlice.reducer;
-const bouquetsReducer = bouquetsSlice.reducer;
-
 const rootReducer = {
-  basket: basketReducer,
-  bouquets: bouquetsReducer
+  basket: basketSlice,
+  bouquets: bouquetsSlice
 };
 
 const store = configureStore({

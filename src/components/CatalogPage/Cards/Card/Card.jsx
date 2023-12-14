@@ -13,6 +13,7 @@ const Card = ({ cardId, cardTitle, cardPrice, cardImg, cardDescription }) => {
   const handleMouseLeave = useCallback(() => {
     setIsHovered(false);
   }, []);
+  console.log(cardId);
 
   return (
     <div
@@ -20,6 +21,7 @@ const Card = ({ cardId, cardTitle, cardPrice, cardImg, cardDescription }) => {
       onMouseLeave={handleMouseLeave}
       className="Card"
     >
+      
       {/* Отображение компонентов в зависимости от состояния isHovered */}
       {isHovered ? (
         <CardSaleFocus
