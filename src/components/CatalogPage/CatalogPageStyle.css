@@ -1,0 +1,16 @@
+.PageContent {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  position: relative;
+}
+.MainPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  z-index: 0;
+}

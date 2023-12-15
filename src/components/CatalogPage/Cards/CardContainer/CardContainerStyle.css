@@ -23,3 +23,11 @@
   width: 1110px;
   height: auto;
 }
+
+.loadingСard {
+  display: flex;
+
+  width: 354px;
+  height: 550px;
+  background: #979797c2;
+}

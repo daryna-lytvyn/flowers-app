@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Різнозбірний букет",
+        "price": 1500,
+        "img": "/img/for card 1.jpg",
+        "description": "Складається із 45 ...."
+    },
+    {
+        "id": 2,
+        "title": "букет Білих Ранункулюсів",
+        "price": 2500,
+        "img": "/img/for card 2.jpg",
+        "description": "Складається із 345 ...."
+    },
+    {
+        "id": 3,
+        "title": "букет Ранункулюсів",
+        "price": 3500,
+        "img": "/img/for card 3.jpg",
+        "description": "Складається із 45 ...."
+    },
+    {
+        "id": 4,
+        "title": "букет гіпсофіл",
+        "price": 850,
+        "img": "/img/for card 4.jpg",
+        "description": "Складається із 45 ...."
+    }
+]

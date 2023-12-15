@@ -13,6 +13,7 @@ const Card = ({ cardId, cardTitle, cardPrice, cardImg, cardDescription }) => {
   const handleMouseLeave = useCallback(() => {
     setIsHovered(false);
   }, []);
+  console.log(cardId);
 
   return (
     <div
@@ -26,10 +27,17 @@ const Card = ({ cardId, cardTitle, cardPrice, cardImg, cardDescription }) => {
           id={cardId}
           title={cardTitle}
           price={cardPrice}
+          img={cardImg}
           description={cardDescription}
         />
       ) : (
-        <CardSale id={cardId} title={cardTitle} price={cardPrice} img={cardImg} />
+        <CardSale
+          id={cardId}
+          title={cardTitle}
+          price={cardPrice}
+          img={cardImg}
+          description={cardDescription}
+        />
       )}
     </div>
   );

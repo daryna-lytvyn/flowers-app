@@ -17,24 +17,6 @@
     
 }
 
-.PageContent{
-    width: 100%;
-    height: auto;
-    background: #FFFFFF;
-    position: relative;
-}
-.MainPage{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    width: 100%;
-    height: auto;
-    background: #FFFFFF;
-    z-index: 0;
-}
-
-
 
 
 
