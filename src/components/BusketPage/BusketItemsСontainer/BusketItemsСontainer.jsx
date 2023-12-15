@@ -1,9 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./BusketItemsСontainerStyle.css";
 import BusketItem from "../BusketItem/BusketItem";
 
-import { useSelector} from "react-redux";
-import {  selectBasketItems,selectBasketTotalPrice } from "../../../store/Basket/basketSlice";
+import { useSelector } from "react-redux";
+import {
+  selectBasketItems,
+  selectBasketTotalPrice,
+} from "../../../store/Basket/basketSlice";
 
 const BusketItemsСontainer = () => {
   const basket = useSelector(selectBasketItems);

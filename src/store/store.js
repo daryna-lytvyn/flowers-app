@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
 import basketSlice from './Basket/basketSlice';
-import bouquetsSlice  from './Bouquets/bouquetsSlice';
+import bouquetsSlice from './Bouquets/bouquetsSlice';
 
 const rootReducer = {
   basket: basketSlice,
-  bouquets: bouquetsSlice 
+  bouquets: bouquetsSlice
 };
 
 const store = configureStore({

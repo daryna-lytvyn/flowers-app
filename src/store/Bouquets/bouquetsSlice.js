@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk  } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import bouquetsData from './bouquets.json';
 
 export const fetchBouquets = createAsyncThunk('bouquets/fetchAll', async (_, thunkAPI) => {

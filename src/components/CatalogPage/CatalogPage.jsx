@@ -3,11 +3,10 @@ import "./CatalogPageStyle.css";
 
 import Header from "../Heder/Heder";
 import Footer from "../Footer/Footer";
-import CardContainer from "./Cards/CardContainer/CardContainer"; 
+import CardContainer from "./Cards/CardContainer/CardContainer";
 import BusketPage from "../BusketPage/BusketPage";
 
 const CatalogPage = () => {
-
   const [showBusket, setShowBusket] = useState(false);
   const toggleBusket = () => {
     setShowBusket(!showBusket);
@@ -22,6 +21,6 @@ const CatalogPage = () => {
         <Footer />
       </div>
     </div>
-  )
+  );
 };
 export default CatalogPage;

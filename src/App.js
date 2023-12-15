@@ -4,7 +4,7 @@ import './styles/App.css';
 import CatalogPage from './components/CatalogPage/CatalogPage';
 
 function App() {
-  
+
   return (
     <CatalogPage />
   )

@@ -39,7 +39,6 @@
   border: none;
   outline: none;
 
-
   width: 100%;
   height: auto;
 
@@ -55,11 +54,10 @@
   text-transform: uppercase;
 
   color: #000000;
- 
 }
 
 .busketExitButton:hover {
-  color: #BC0000;
+  color: #bc0000;
   transition: opacity 0.3s ease;
   cursor: pointer;
 }

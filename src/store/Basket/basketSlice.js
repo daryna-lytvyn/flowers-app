@@ -42,15 +42,24 @@ const basketSlice = createSlice({
             });
         },
         removeItem: (state, action) => {
-            const existingItem = state.items.find(item => item.id === action.payload);
+            const { id, title, price, img, description } = action.payload;
+            const existingItem = state.items.find(item => item.id === id);
             if (existingItem) {
                 if (existingItem.quantity > 1) {
                     existingItem.quantity -= 1;
                 } else {
-                    state.items = state.items.filter(item => item.id !== action.payload);
+                    state.items = state.items.filter(item => item.id !== id);
                 }
-                state.totalPrice += existingItem.price;
+                state.totalPrice -= existingItem.price;
             }
+
+            console.log("Reducer adding item to basket:", {
+                id,
+                title,
+                price,
+                img,
+                description,
+            });
         },
     },
     extraReducers: (builder) => {
@@ -70,6 +79,6 @@ const basketSlice = createSlice({
 export const { addItem, removeItem } = basketSlice.actions;
 export const selectBasketItems = (state) => state.basket.items;
 export const statusBasketLoading = (state) => state.basket.loading;
-export const selectBasketTotalPrice =(state)=> state.basket.totalPrice;
+export const selectBasketTotalPrice = (state) => state.basket.totalPrice;
 
 export default basketSlice.reducer;
