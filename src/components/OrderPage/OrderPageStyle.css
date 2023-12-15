@@ -1,0 +1,27 @@
+.PageContent{
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    position: relative;
+}
+.MainPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    z-index: 0;
+}
+
+.busketButton{
+    opacity: 0;
+    cursor: default;
+}
+.busketButton:hover {
+    opacity: 0;
+}
+.hederContentText{
+    color: #34571e;
+}

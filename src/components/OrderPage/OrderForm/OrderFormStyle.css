@@ -1,0 +1,99 @@
+.OrderFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  width: 100%;
+  height: auto;
+
+  background: #ffffff;
+}
+
+.OrderForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+
+  width: 50%;
+  height: auto;
+}
+
+.fild {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px;
+
+  width: 45%;
+  height: 80px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+.fild input {
+  box-sizing: border-box;
+
+  display: flex;
+  gap: 10px;
+
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid #34571e;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+
+  padding: 10px; 
+
+  color: #34571e;
+}
+
+.makeOrderButtonContainer {
+  padding-top: 50px;
+  width: 100%;
+  height: auto;
+}
+
+.makeOrderButton {
+  width: 100%;
+  height: 40px;
+
+  background: #000000;
+
+  cursor: pointer;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 00;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.makeOrderButton:hover {
+  opacity: 0.8;
+}
